@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void preCond() {
-        url = "https://www.facebook.com/r.php?locale=pt_BR&display=page";
+        url = "";
         driver = new ChromeDriver();
         driver.get( url );
         driver.manage().window().maximize();

@@ -74,11 +74,6 @@ public class CadastroBaseFisica extends BasePage {
         return this;
     }
 
-    //public String buscarResultadoCadastro(){
-    //    return driver.getPageSource();
-    //}
-
-
 
 public CadastroBaseFisica(WebDriver driver){
         super(driver);

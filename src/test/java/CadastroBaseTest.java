@@ -8,7 +8,8 @@ public class CadastroBaseTest extends BaseTest {
     public void validarCadastro() {
         CadastroBaseTest page = new CadastroBaseTest(getDriver());
 
-        String resultadoFinal = page.informarIdBase("01")
+        String resultadoFinal = page.clicarAdicionar()
+                .informarIdBase("01")
                 .informarIdUsuario("333")
                 .informarNomeBase("Armazém")
                 .informarDataCadastro("23/05/2024")

@@ -8,6 +8,15 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class CadastroBaseFisica extends BasePage {
+
+    @FindBy(id = "Adicionar")
+    private WebElement btnAdicionar;
+    @FindBy(id = "Editar")
+    private WebElement btnEditar;
+    @FindBy(id = "Exibir")
+    private WebElement btnExibir;
+    @FindBy(id = "Excluir")
+    private WebElement btnExcluir;
     @FindBy(id = "idBase")
     private WebElement txIdBase;
     @FindBy(id = "idUsuario")
@@ -30,6 +39,23 @@ public class CadastroBaseFisica extends BasePage {
     private WebElement rdNao;
     @FindBy(id = "cadastro")
     private WebElement btnCadastro;
+
+    public CadastroBaseFisica clicarAdicionar() {
+        btnAdicionar.click();
+        return this;
+    }
+    public CadastroBaseFisica clicarEditar() {
+        btnEditar.click();
+        return this;
+    }
+    public CadastroBaseFisica clicarExibir() {
+        btnExibir.click();
+        return this;
+    }
+    public CadastroBaseFisica clicarExcluir() {
+        btnExcluir.click();
+        return this;
+    }
 
     public CadastroBaseFisica informarIdBase (String idBase){
         txIdBase.sendKeys(idBase);
